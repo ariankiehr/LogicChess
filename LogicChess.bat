@@ -1,0 +1,1 @@
+@cd Proyecto\LogicChessGui\classes&@javaw Main&@exit

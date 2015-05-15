@@ -1,0 +1,6 @@
+#!/bin/bash
+#Ejecutar este script despues de hacer modificaciones en lexer.l o parser.y
+#para que se actualizen los archivos fucntes y poder compilar el nuevo codigo
+flex --header-file=scanner.h -o scanner.cpp lexer.l
+bison -o parser.cpp --defines=parser.h parser.y
+echo "Done."
